@@ -19,7 +19,7 @@ public class PatternGen {
 			for (int j = (yCoord - range); j <= (yCoord + range); j++) {
 				if (i == xCoord && j == yCoord)
 					continue;
-				if (i < 0 || j < 0 || i >= grid.getHeight() || j >= grid.getWidth())
+				if (i < 0 || j < 0 || i >= grid.getWidth() || j >= grid.getHeight())
 					continue;
 				results.add(grid.get(i, j));
 			}
@@ -41,7 +41,7 @@ public class PatternGen {
 			for (int j = (yCoord - k); j <= (yCoord + k); j++) {
 				if (i == xCoord && j == yCoord)
 					continue;
-				if (i < 0 || j < 0 || i >= grid.getHeight() || j >= grid.getWidth())
+				if (i < 0 || j < 0 || i >= grid.getWidth() || j >= grid.getHeight())
 					continue;
 				results.add(grid.get(i, j));
 			}
